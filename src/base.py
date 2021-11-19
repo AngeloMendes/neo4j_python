@@ -3,4 +3,4 @@ from os import getenv
 from dotenv import load_dotenv
 load_dotenv()
 
-graph_db = Graph(getenv('URL_DB'))
+graph_db = Graph(getenv('URL_DB'), name=getenv('NAME_DB'))
